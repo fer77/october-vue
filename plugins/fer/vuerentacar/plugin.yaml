@@ -1,0 +1,11 @@
+plugin:
+    name: 'fer.vuerentacar::lang.plugin.name'
+    description: 'fer.vuerentacar::lang.plugin.description'
+    author: fer
+    icon: oc-icon-car
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Vehicles
+        url: fer/vuerentacar/vehicles
+        icon: icon-car

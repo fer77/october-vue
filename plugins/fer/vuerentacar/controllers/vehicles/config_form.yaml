@@ -1,0 +1,10 @@
+name: Vehicles
+form: $/fer/vuerentacar/models/vehicle/fields.yaml
+modelClass: Fer\Vuerentacar\Models\Vehicle
+defaultRedirect: fer/vuerentacar/vehicles
+create:
+    redirect: 'fer/vuerentacar/vehicles/update/:id'
+    redirectClose: fer/vuerentacar/vehicles
+update:
+    redirect: fer/vuerentacar/vehicles
+    redirectClose: fer/vuerentacar/vehicles
