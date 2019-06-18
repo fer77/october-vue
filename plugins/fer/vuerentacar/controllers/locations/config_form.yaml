@@ -1,0 +1,10 @@
+name: Locations
+form: $/fer/vuerentacar/models/location/fields.yaml
+modelClass: Fer\Vuerentacar\Models\Location
+defaultRedirect: fer/vuerentacar/locations
+create:
+    redirect: 'fer/vuerentacar/locations/update/:id'
+    redirectClose: fer/vuerentacar/locations
+update:
+    redirect: fer/vuerentacar/locations
+    redirectClose: fer/vuerentacar/locations

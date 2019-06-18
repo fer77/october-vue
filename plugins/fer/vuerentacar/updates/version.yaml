@@ -3,3 +3,9 @@
 1.0.2:
     - 'Created table fer_vuerentacar_vehicles'
     - builder_table_create_fer_vuerentacar_vehicles.php
+1.0.3:
+    - 'Created table fer_vuerentacar_locations'
+    - builder_table_create_fer_vuerentacar_locations.php
+1.0.4:
+    - 'Updated table fer_vuerentacar_locations'
+    - builder_table_update_fer_vuerentacar_locations.php
