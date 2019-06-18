@@ -12,8 +12,8 @@ class Vehicle extends Model
     /* Relations */
     public $belongsToMany = [
         'locations' => [
-            'Fer\Vuerentacar\Models\Location',
-            'table' => 'fer_vuerentacar_vehicles_locations',
+            'Fer\Vuerentacar\Models\Location', // model
+            'table' => 'fer_vuerentacar_vehicles_locations', // pivot table
             'order' => 'title'
         ]
     ];
