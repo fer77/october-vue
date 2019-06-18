@@ -4,7 +4,7 @@ use Fer\Vuerentacar\Models\Vehicle;
 use Fer\Vuerentacar\Models\Location;
 
 Route::get('vehicles', function () {
-    $vehicles = Vehicle::all();
+    $vehicles = Vehicle::with('locations')->get();
     return $vehicles;
 });
 
