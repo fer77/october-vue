@@ -4,7 +4,7 @@ use Fer\Vuerentacar\Models\Vehicle;
 use Fer\Vuerentacar\Models\Location;
 
 Route::get('vehicles', function () {
-    $vehicles = Vehicle::with('locations')->get();
+    $vehicles = Vehicle::with(['locations', 'image'])->get();
     return $vehicles;
 });
 
@@ -12,7 +12,7 @@ Route::get('vehicles/filter/{id}', function ($id) {
     // return list of vehicles from API
     $vehicles = Vehicle::whereHas('locations', function ($query) use ($id) {
         $query->where('id', '=', $id);
-    })->get();
+    })->with('image')->get();
     return $vehicles;
 });
 

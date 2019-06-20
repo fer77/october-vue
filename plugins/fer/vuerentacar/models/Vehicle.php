@@ -17,6 +17,10 @@ class Vehicle extends Model
             'order' => 'title'
         ]
     ];
+
+    public $attachOne = [
+        'image' => 'System\Models\File',
+    ];
     
     /**
      * @var string The database table used by the model.
