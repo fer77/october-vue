@@ -15,6 +15,11 @@ class Vehicle extends Model
             'Fer\Vuerentacar\Models\Location', // model
             'table' => 'fer_vuerentacar_vehicles_locations', // pivot table
             'order' => 'title'
+        ],
+        'dates' => [
+            'Fer\Vuerentacar\Models\Date', // model
+            'table' => 'fer_vuerentacar_vehicles_dates', // pivot table
+            'order' => 'pickup'
         ]
     ];
 

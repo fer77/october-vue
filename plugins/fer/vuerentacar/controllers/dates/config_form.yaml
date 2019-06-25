@@ -1,0 +1,10 @@
+name: Dates
+form: $/fer/vuerentacar/models/date/fields.yaml
+modelClass: Fer\Vuerentacar\Models\Date
+defaultRedirect: fer/vuerentacar/dates
+create:
+    redirect: 'fer/vuerentacar/dates/update/:id'
+    redirectClose: fer/vuerentacar/dates
+update:
+    redirect: fer/vuerentacar/dates
+    redirectClose: fer/vuerentacar/dates

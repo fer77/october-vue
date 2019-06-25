@@ -14,3 +14,7 @@ navigation:
                 label: Locations
                 url: fer/vuerentacar/locations
                 icon: icon-home
+            side-menu-item2:
+                label: Dates
+                url: fer/vuerentacar/dates
+                icon: icon-calendar

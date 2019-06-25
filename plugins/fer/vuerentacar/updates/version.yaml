@@ -15,3 +15,9 @@
 1.0.6:
     - 'Updated table fer_vuerentacar_vehicles'
     - builder_table_update_fer_vuerentacar_vehicles_2.php
+1.0.7:
+    - 'Created table fer_vuerentacar_dates'
+    - builder_table_create_fer_vuerentacar_dates.php
+1.0.8:
+    - 'Created table fer_vuerentacar_vehicles_dates'
+    - builder_table_create_fer_vuerentacar_vehicles_dates.php
