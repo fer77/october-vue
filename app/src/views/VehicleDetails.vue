@@ -33,11 +33,14 @@
 export default {
     computed: {
         vehicle() {
+            this.$store.dispatch('getVehicle', this.$route.params.slug);
             return this.$store.getters.currentVehicle;
         },
         dates() {
-            const start = new Date(this.$store.getters.pickupDate);
-            const end = new Date(this.$store.getters.dropoffDate);
+            const start = this.$store.getters.pickupDate ?
+                new Date(this.$store.getters.pickupDate) : new Date(localStorage.getItem('pickup'));
+            const end = this.$store.getters.dropoffDate ? 
+                new Date(this.$store.getters.dropoffDate) : new Date(localStorage.getItem('dropoff'));
             const daysBetween = end - start;
             const price = this.vehicle.price * this.convertMiliseconds(daysBetween, 'd');
             return {
