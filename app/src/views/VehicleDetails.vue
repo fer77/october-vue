@@ -23,6 +23,11 @@
                         <li><strong>Number of days:</strong> {{dates.daysBetween }} </li>
                         <li><strong>Price:</strong> ${{dates.price }} </li>
                     </ul>
+                    <router-link
+                        class="bg-green-600 text-white font-bold py-3 px-4 rounded mt-8 inline-block"
+                        :to="{ name: 'Reservation', params: { slug: slug } }">
+                        Continue
+                    </router-link>
                 </div>
             </div>
         </div>
