@@ -113,6 +113,11 @@ export default new Vuex.Store({
       commit('SET_DROPOFF', date.value);
       // Persist data when page is refreshed:
       localStorage.setItem('dropoff', date.value);
+    },
+    saveUser({commit, state}, user) {
+      axios.post('http://sites.devv/api/auth/register', user).then(response => {
+        console.log(response);
+      });
     }
   }
 })
